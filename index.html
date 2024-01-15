@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>INDEX1</title>
+	
+	<!-- 슬라이드쇼 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+
+	$('#top_menu .sub_1').hide();
+	$(' .sub_1').hide();
+
+	$('.menu_1').mouseover(function(){
+		$('.sub_1').slideDown();
+
+	});
+	$('.menu_1').mousedown(function(){
+		$('.sub_1').hide();
+	});
+});
+</script>
+	<script language="javascript">
+  function showPopup() { window.open("08_2_popup.html", "a", "width=400, height=300, left=100, top=50"); }
+  </script>
+	<script type="text/javascript">
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+// 다음, 이전 제어
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// 사진 제어
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+	</script>
+	
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.headerIndex {
+			margin: auto;
+			height: auto;
+			width: auto;
+			overflow: auto;
+		}
+		
+		<!-- 드롭 박스 메뉴 -->
+		.dropmenu{
+			border:none;
+			border:0px;
+			padding:0px;
+			font: "sans-serif";
+			margin-left: auto; 
+			margin-right: auto;"
+		}
+		.dropmenu ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.dropmenu li{
+			float:left;
+			padding:0px;
+		}
+		.dropmenu li a{
+			display:block;
+			line-height:70px;
+			margin:0px;
+			padding:0px 25px;
+			text-align:center;
+			text-decoration:none;
+		}
+
+		.dropmenu li a:hover, .dropmenu ul li:hover a{
+			background: rgb(100,100,100);
+			color:#FFFFFF;
+			text-decoration:none;
+		}
+		.dropmenu li ul{
+			display:none; 
+			height:auto;
+			border:0px;
+			position:absolute;
+			width:135px;
+			z-index:200;
+		}
+		.dropmenu li:hover ul{
+			display:block;
+		}
+
+		.dropmenu li li {
+			background: #000000;
+			display:block;
+			float:none;
+			margin:0px;
+			padding:0px;
+		}
+
+		.dropmenu li:hover li a{
+			background:none;
+		}
+
+		.dropmenu li ul a{
+			display:block;
+			margin:0px;
+			padding:0px 10px 0px 15px;
+			text-align:left;
+		}
+
+		.dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+			border:0px;
+			text-decoration:none;
+		}
+
+		.dropmenu p{
+			clear:left;
+		}
+
+
+		<!-- 슬라이더 메뉴 추천 -->
+		.maintitle {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 100px;
+    position: absolute;
+    height: auto;
+    width: auto;
+}
+	.index_1 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	
+	.menuDiv{
+		display: inline-block;
+		text-align: center;
+	}
+* {box-sizing:border-box} 	
+	.slideshow-container{
+		max-width: 500px;
+		position: relative;
+		margin: auto;
+	}
+	.mySlides {
+		display: none;
+	}
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+	}
+	
+	/* "다음 버튼"을 오른쪽에 위치 */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* 마우스를 올리면 배경색을 변경 */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* 캡션 부분 */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 숫자 부분 위에 적은 (1/3) <-- 이런거 */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* 하단의 점들 */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* 페이드 효과 */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+	
+	.a{
+		width: 100%;
+        margin: 0px auto;
+	}
+	.a img {
+  transition: all 0.2s linear;
+}
+.a:hover img {
+  transform: scale(1.4);
+}
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+body {
+    background-color: #FFFFFF;
+    background-image: url();
+    background-repeat: no-repeat;
+}
+    .suggestionMenu {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+    .BG {
+		width: 100%;
+		height: 100%;
+		background-image: url(img/Back.jpg);
+    	background-repeat: no-repeat;
+		background-size: cover;
+	
+}
+    body,td,th {
+    font-family: "a추리소설", "리디바탕", "a포스터M", "맑은 고딕 Semilight";
+}
+    </style>
+	
+</head>
+	<body>
+	<div class="headerIndex"><table width="1200" border="0" style="margin-left: auto; margin-right: auto;">
+			<tr style="text-align: center"><td width="390"><a href="INDEX1.html"><img src="img/무제311_20220526234926.png" width="240" height="54" style="float: left; display: inline-block;" alt=""/></a></td>
+				  <td width="70"><p style="margin-top: 10px"><a href="intro.html">오늘의 셰프</a></p></td>
+			  <td width="70">
+					  
+			    <div class="dropmenu" align="middle">
+						  <ul>
+							  <li><a href="national.html" id="current" style="align: middle; margin-top: 10px;">세계의 요리</a>
+								  <ul>
+								    <li><a href="national.html#korfood">한식</a></li>
+									  <li><a href="national.html#chfood">중식</a></li>
+									  <li><a href="national.html#jafood">일식</a></li>
+								  </ul>
+							  </li>
+						  </ul>
+			    </div>
+					  
+				</td>
+			  <td width="70"><p style="margin-top: 10px"><a href="tip.html">요리 TIP!</a></p></td>
+		    </tr>
+			</table>
+</div>
+		
+		
+		  <!-- 메인 이미지 -->
+    <a href="https://play.google.com/store/games"><img src="img/main.png" alt="" width="100%"  background-size: cover/></a>    
+			
+		<!-- 3로 -->
+		<div class="BG">
+		
+	<div style="text-align : center;  background-color: rgba( 0, 0, 0, 0 );">
+		<p style="font-size: xx-large">&nbsp;</p>
+	  <p style="font-size: xx-large">오늘의 셰프와 함께하는 3로</p>
+	  <p><img src="img/3.png" width="70%" height="70%" alt=""/></p>
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+	</div>
+	
+  <!-- 슬라이더 메뉴 추천 -->
+	  <div class="suggestionMenu">
+	    <p>&nbsp;</p>
+	    <p style="font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight'">오늘은 뭐 먹지? 하단 버튼을 눌러 오늘의 추천 메뉴를 확인하세요.</p>
+	  </div>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+<!-- 슬라이드쇼 컨테이너 -->
+		<div class="slideshow-container">
+			
+<!-- 숫자와 캡션이 있는 이미지 -->
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<a href="https://youtu.be/_H64Kz7Mgz4"><img src="img/egg.png" style="width:100%" alt=""/></a>
+				<div class="text">포근한 계란찜</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<a href="https://youtu.be/7Ez066LV76U"><img src="img/sam.png" style="width:100%" alt=""/></a>
+				<div class="text">뜨끈한 삼계탕</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<a href="https://youtu.be/t4Es8mwdYlE"><img src="img/tooki.png" style="width:100%" alt=""/></a>
+				<div class="text">매콤달콤 떡볶이</div>
+			</div>
+
+<!-- 다음, 이전 이미지 버튼 -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+<!-- 현재 이미지를 알려주는 하단의 점 -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		
+		<p>&nbsp;</p>
+	  </div>
+		
+	
+		<div class="suggestionMenu">
+		  <p>&nbsp;</p>
+		  <p style="font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight'">오늘의 요리 영상.</p>
+		</div>
+		<p align="middle"> 
+			<iframe width="320" height="180"  src="https://www.youtube.com/embed/DnQ09ZZCjCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+		
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		
+    <div style="width : 100%;  height: 300px;  background-color: #000000; color:#ffffff; opacity: 0.7;">
+		<p style="text-align: center">&nbsp;</p>
+		<p style="text-align: center">서울여자대학교</p>
+		<p style="text-align: center">미래산업융합대학 소프트웨어융합학과</p>
+		<p style="text-align: center">2020111380 김희영</p>
+	</div>
+			</div>
+</body>
+</html>

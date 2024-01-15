@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tip</title>
+	<style type="text/css">
+	a:link {
+    text-decoration: none;
+    color: #000000;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+a:active {
+    text-decoration: none;
+    color: #000000;
+    font-family: "a추리소설", "리디바탕", "a포스터M", "맑은 고딕 Semilight";
+}
+    </style>
+</head>
+	<!-- 슬라이드쇼 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+
+	$('#top_menu .sub_1').hide();
+	$(' .sub_1').hide();
+
+	$('.menu_1').mouseover(function(){
+		$('.sub_1').slideDown();
+
+	});
+	$('.menu_1').mousedown(function(){
+		$('.sub_1').hide();
+	});
+});
+</script>
+	
+	<script>
+		int pageNuma=0;
+		int pageNumb=0;
+		String url;
+	
+		function imgsrc(a,b){
+			
+			if(a==0){
+				
+				pageNuma++;
+				if (pageNuma>b){
+					pageNuma=0;
+				}
+				url="img/hand/"+pageNuma+".png"
+			}
+			
+			if(a==1){
+				
+				pageNumb++;
+				if (pageNumb>b){
+					pageNumb=0;
+				}
+				url="img/wash/"+pageNumb+".png"
+			}
+		}
+	
+	</script>
+	
+	
+	
+<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.headerIndex {
+			margin: auto;
+			height: auto;
+			width: auto;
+			overflow: auto;
+		}
+		
+		<!-- 드롭 박스 메뉴 -->
+		.dropmenu{
+			border:none;
+			border:0px;
+			padding:0px;
+			font: "sans-serif";
+			margin-left: auto; 
+			margin-right: auto;"
+		}
+		.dropmenu ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.dropmenu li{
+			float:left;
+			padding:0px;
+		}
+		.dropmenu li a{
+			display:block;
+			line-height:70px;
+			margin:0px;
+			padding:0px 25px;
+			text-align:center;
+			text-decoration:none;
+		}
+
+		.dropmenu li a:hover, .dropmenu ul li:hover a{
+			background: rgb(100,100,100);
+			color:#FFFFFF;
+			text-decoration:none;
+		}
+		.dropmenu li ul{
+			display:none; 
+			height:auto;
+			border:0px;
+			position:absolute;
+			width:135px;
+			z-index:200;
+		}
+		.dropmenu li:hover ul{
+			display:block;
+		}
+
+		.dropmenu li li {
+			background: #000000;
+			display:block;
+			float:none;
+			margin:0px;
+			padding:0px;
+		}
+
+		.dropmenu li:hover li a{
+			background:none;
+		}
+
+		.dropmenu li ul a{
+			display:block;
+			margin:0px;
+			padding:0px 10px 0px 15px;
+			text-align:left;
+		}
+
+		.dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+			border:0px;
+			text-decoration:none;
+		}
+
+		.dropmenu p{
+			clear:left;
+		}
+
+
+		
+		.BG {
+    width: 100%;
+    height: 100%;
+    background-image: url("img/Back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+    .suggestionMenu {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+	
+	
+	
+
+</style>
+
+<body>
+	
+<div class="headerIndex"><table width="1200" border="0" style="margin-left: auto; margin-right: auto; font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight';">
+			<tr style="text-align: center"><td width="390"><a href="INDEX1.html"><img src="img/무제311_20220526234926.png" width="240" height="54" style="float: left; display: inline-block;" alt=""/></a></td>
+				  <td width="70"><p style="margin-top: 10px"><a href="intro.html">오늘의 셰프</a></p></td>
+			  <td width="70">
+					  
+			    <div class="dropmenu" align="middle">
+						  <ul>
+							  <li><a href="national.html" id="current" style="align: middle; margin-top: 10px;">세계의 요리</a>
+								  <ul>
+								    <li><a href="national.html#korfood">한식</a></li>
+									  <li><a href="national.html#chfood">중식</a></li>
+									  <li><a href="national.html#jafood">일식</a></li>
+								  </ul>
+							  </li>
+						  </ul>
+			    </div>
+					  
+			  </td>
+			  <td width="70"><p style="margin-top: 10px"><a href="tip.html">요리 TIP!</a></p></td>
+		    </tr>
+			</table>
+</div>
+<div class="BG">
+	<div style="text-align : center;"> <a href="https://play.google.com/store/games"><img src="img/무제309_20220526234104.png" width="1200" height="200" alt=""/></a>
+	</div>
+<table width="1000" height="300" border="0" style="margin-left: auto; margin-right: auto; margin-top: 20px;">
+  <tbody>
+    <tr>
+      <th colspan="3" style="text-align: center; font-size: xx-large; font-weight: normal; font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight';" scope="row"><p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>더 맛있는 요리를 위한 3가지</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p></th>
+    </tr>
+    <tr>
+      <th style="text-align: center; font-size: large; font-weight: normal; font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight';" scope="row"><p>청결</p>
+        <p>&nbsp;</p>
+      <p><a href="#wash"><img src="img/cleanliness.png" width="100" height="100" alt=""/></a></p></th>
+      <td style="text-align: center; font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight';"><p>신선</p>
+        <p>&nbsp;</p>
+      <p><img src="img/fresh.png" width="100" height="100" alt=""/></p></td>
+      <td style="text-align: center"><p style="font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight'">정확</p>
+        <p>&nbsp;</p>
+      <p><img src="img/target.png" width="100" height="100" alt=""/></p></td>
+    </tr>
+  </tbody>
+</table>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<table width="1000" border="0" style="margin-left: auto; margin-right: auto;">
+		  <tbody>
+		    <tr>
+		      <td style="font-size: medium; width: 500; height: 300; font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight'; font-style: normal;"><p id="SE-f16b38c5-0a13-4c98-86d5-951c6f7cce38"><span id="SE-8fb23bcf-983b-4da4-81a7-416023195f07" style="text-align: center"><strong style="font-size: large; text-align: right;">건강: 사소하지만 당연한 위생과 청결 상식</strong></span></p>
+		        <p id="SE-101ac0c7-d464-42ae-a9cf-381ec8713df3"><span id="SE-aa903db6-67d4-4a85-a116-553d3f9157cf">​</span></p>
+		        <p id="SE-edc01efe-90a5-42f8-85ac-617bbdf7345e">영국 왕립공중보건학회(RSPH)는 </p>
+		        <p id="SE-8624606f-6b2e-4d40-94d0-72459eec2602">집에서 "더러워 보이는 곳"을 청소하는 것보다는 몸에 해로운 미생물이 퍼지는 것을 막는 것이 </p>
+		        <p>더 중요하다는 보고서를 발표했다. 손과 옷을 제때 씻거나 물건의 겉표면을 닦는 것은 위생을 </p>
+		        <p>유지하는데 매우 중요하며, 네 사람 중 한 명은 이런 중요성을 인지하지 못하고 있다.</p>
+		        <p id="SE-14a29b2b-ad50-4cbc-a3b2-3ca949f5a74f">이를 잘 지키는 것만으로도 전염을 막고 항생 물질에 대한 내성을 기를 수 있다.</p>
+		        <p id="SE-86220c8e-7b9a-46c1-81fe-5f3b1f264633">또한 흔히 말하는 "필요 이상으로 청결을 유지한다"라는 표현은 없다고 말했다.</p>
+		        <p id="SE-bfb111b9-a888-4e55-b252-bc5a7b467d36">​</p></td>
+		      <td><iframe src="https://www.youtube.com/embed/PMUvunkUXnI" width="300" height="200" frameborder="0" style="text-align: center" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+	        </tr>
+	      </tbody>
+  </table>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	<table width="1000" border="0" style="margin-left: auto; margin-right: auto;">
+		  <tbody>
+		    <tr>
+			  <td><iframe src="https://www.youtube.com/embed/3gQJRFDoffA" width="300" height="200" frameborder="0" style="text-align: center" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+		      <td style="font-size: medium; width: 500; height: 300; font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight';" >
+			    <div style="margin-left: 50px">
+				  <p style="font-size: large; font-weight: bold;">신선한 재료 고르기</p>
+				  <p>&nbsp;</p>
+				  <p><strong>쇠고기</strong> </p>
+			    <p>살은 윤기가 나고 검은 기운이 도는 붉은색, 지방은 상아색을 띠는 것을 고른다 눌러보았을 때 탄력이 많은 것은 아직 숙성이 덜 되었다는 증거로 먹기 좋은 상태가 아니다</p>
+			    <p>&nbsp; </p>
+				  <p><strong>돼지고기</strong>		        </p>
+			    <p>핑크빛을 띠는 것을 고른다 색이 옅을수록 신선도가 떨어진다 더 오래되면 색이 검어지면서 </p>
+			    <p>전체적으로 늘어진다 </p>
+			    <p>&nbsp;</p>
+				  <p><strong>닭고기</strong>		        </p>
+				  <p>먼저 나쁜 냄새가 나지 않는지 체크한다 살은 노란빛을 띨수록 신선하다 오래되면 점차 </p>
+				  <p>하얗게 변한다.</p>
+			    </div></td>
+	          
+		      
+	        </tr>
+	      </tbody>
+  </table>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	<table width="1000" border="0" style="margin-left: auto; margin-right: auto;">
+		  <tbody>
+		    <tr>
+		      <td style="font-size: medium; width: 500; height: 300; font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight';" ><p style="font-weight: bold; font-size: large;">유통기한</p>
+	          <p>제품의 제조일로부터 소비자에게 유통·판매가 허용되는 기한을 뜻한다. </p>
+	          <p>소비자는 이 기한 내에 적정하게 보관하고 관리된 식품은 안심하고 먹을 수 있으며, </p>
+	          <p>제조업체는 제품의 품질이나 안전성을 책임지고 보장한다는 의미를 담고 있다.</p></td>
+	          
+		      <td style="margin-left: auto; margin-right: auto;"><iframe src="https://www.youtube.com/embed/b-xru8BEYuI" width="300" height="200" frameborder="0" style="text-align: center" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+	        </tr>
+	      </tbody>
+  </table>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+
+	
+	
+
+</div>
+	<div style="width : 100%; height: 300px; background-color: #000000; opacity: 0.7; color: #ffffff; font-family: 'a추리소설', '리디바탕', 'a포스터M', '맑은 고딕 Semilight';">
+		<p style="text-align: center">서울여자대학교</p>
+		<p style="text-align: center">미래산업융합대학 소프트웨어융합학과</p>
+		<p style="text-align: center">2020111380 김희영</p>
+	</div>
+</body>
+</html>

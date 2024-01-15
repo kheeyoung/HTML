@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>national</title>
+	<style type="text/css">
+	*{
+			margin: 0;
+			padding: 0;
+		}
+		.headerIndex {
+			margin: auto;
+			height: auto;
+			width: auto;
+			overflow: auto;
+		}
+		.BG {
+		width: 100%;
+		height: 100%;
+		background-image: url("img/Back.jpg");
+    	background-repeat: no-repeat;
+		background-size: cover;
+	
+}
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		<!-- 드롭 박스 메뉴 -->
+		.dropmenu{
+			border:none;
+			border:0px;
+			padding:0px;
+			font: "sans-serif";
+			margin-left: auto; 
+			margin-right: auto;"
+		}
+		.dropmenu ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.dropmenu li{
+			float:left;
+			padding:0px;
+		}
+		.dropmenu li a{
+			display:block;
+			line-height:70px;
+			margin:0px;
+			padding:0px 25px;
+			text-align:center;
+			text-decoration:none;
+		}
+
+		.dropmenu li a:hover, .dropmenu ul li:hover a{
+			background: rgb(100,100,100);
+			color:#FFFFFF;
+			text-decoration:none;
+		}
+		.dropmenu li ul{
+			display:none; 
+			height:auto;
+			border:0px;
+			position:absolute;
+			width:135px;
+			z-index:200;
+		}
+		.dropmenu li:hover ul{
+			display:block;
+		}
+
+		.dropmenu li li {
+			background: #000000;
+			display:block;
+			float:none;
+			margin:0px;
+			padding:0px;
+		}
+
+		.dropmenu li:hover li a{
+			background:none;
+		}
+
+		.dropmenu li ul a{
+			display:block;
+			margin:0px;
+			padding:0px 10px 0px 15px;
+			text-align:left;
+		}
+
+		.dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+			border:0px;
+			text-decoration:none;
+		}
+
+		.dropmenu p{
+			clear:left;
+		}
+		a:link {
+    color: #000000;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+    .food {
+		width: 1200;
+		margin-left: auto; 
+		margin-right: auto;
+}
+    .FOODIMG {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+    body,td,th {
+    font-family: "a추리소설", "리디바탕", "a포스터M", "맑은 고딕 Semilight";
+}
+    </style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+	<!-- 헤더이미지/ 메뉴 -->
+<body onLoad="MM_preloadImages('img/MOUSEoVER/무제314_20220529014513.png','img/MOUSEoVER/무제314_20220529014347.png','img/MOUSEoVER/무제314_20220529014431.png','img/MOUSEoVER/무제314_20220529015118.png','img/MOUSEoVER/무제314_20220529014628.png','img/MOUSEoVER/무제314_20220529015405.png','img/MOUSEoVER/무제314_20220529015910.png','img/MOUSEoVER/무제314_20220529015651.png','img/MOUSEoVER/무제314_20220529015526.png')">
+	
+<div class="headerIndex"><table width="1200" border="0" style="margin-left: auto; margin-right: auto;">
+			<tr style="text-align: center"><td width="390"><a href="INDEX1.html"><img src="img/무제311_20220526234926.png" width="240" height="54" style="float: left; display: inline-block;" alt=""/></a></td>
+				  <td width="70"><p style="margin-top: 10px"><a href="intro.html">오늘의 셰프</a></p></td>
+			  <td width="70">
+					  
+			    <div class="dropmenu" align="middle">
+						  <ul>
+							  <li><a href="national.html" id="current" style="align: middle; margin-top: 10px;">세계의 요리</a>
+								  <ul>
+								    <li><a href="national.html#korfood">한식</a></li>
+									  <li><a href="national.html#chfood">중식</a></li>
+									  <li><a href="national.html#jafood">일식</a></li>
+								  </ul>
+							  </li>
+						  </ul>
+			    </div>
+					  
+				</td>
+			  <td width="70"><p style="margin-top: 10px"><a href="tip.html">요리 TIP!</a></p></td>
+		    </tr>
+			</table>
+</div>
+	<div class="BG">
+<!-- 사진으로 보는 세계의 음식 -->
+	<div style="text-align : center;"> <a href="https://play.google.com/store/games"><img src="img/무제309_20220526234104.png" width="1200" height="200" alt=""/></a>
+	</div>
+	
+	<div style="text-align : center;">
+	
+		<div style="margin-left: auto; margin-right: auto; text-align: center; font-size: xx-large;">
+			<p style="font-size: xx-large">&nbsp;
+			</p>
+			<p style="font-size: xx-large">한식 </p>
+		</div>
+	
+	  	<div>
+	  	  <table bgcolor = "#474747" width="550" border="0" style="margin-left: auto; margin-right: auto;" >
+			  <tbody>
+						<tr>
+							<th>
+								<a href="#kimbab" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('kimbap','','img/MOUSEoVER/무제314_20220529014513.png',1)"><img src="img/MOUSEoVER/무제314_20220529005324.png" alt="" width="175" height="245" id="kimbap"></a>
+							</th>
+							<th><a href="#egg" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Eggcustard','','img/MOUSEoVER/무제314_20220529014347.png',1)"><img src="img/MOUSEoVER/무제314_20220529005352.png" alt="" width="175" height="245" id="Eggcustard"></a></th>
+							<th>
+					    	<a href="#pig" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('PorkSoup','','img/MOUSEoVER/무제314_20220529014431.png',1)"><img src="img/MOUSEoVER/무제314_20220529005328.png" alt="" width="175" height="245" id="PorkSoup"></a> </th>
+						</tr>
+					</tbody>
+	  	  </table>
+	  </div>
+	
+		<div style="margin-left: auto; margin-right: auto; text-align: center">
+			<p style="font-size: xx-large">&nbsp;</p>
+			<p style="font-size: xx-large">중식		</p>
+		</div>
+		<div>
+		  <table bgcolor = "#474747" width="550" border="0" style="margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr>
+						<th>
+							<a href="#fridrice" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('friedrice','','img/MOUSEoVER/무제314_20220529015118.png',1)"><img src="img/MOUSEoVER/무제314_20220529015136.png" alt="" width="175" height="245" id="friedrice"></a> </th>
+						<th>
+					    	<a href="#mando" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('dumpling','','img/MOUSEoVER/무제314_20220529014628.png',1)"><img src="img/MOUSEoVER/무제314_20220529014544.png" alt="" width="175" height="245" id="dumpling"></a> </th>
+						<th>
+					    	<a href="#spring" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('springrolls','','img/MOUSEoVER/무제314_20220529015405.png',1)"><img src="img/MOUSEoVER/무제314_20220529015306.png" alt="" width="175" height="245" id="springrolls"></a> </th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	
+		<div style="margin-left: auto; margin-right: auto; text-align: center">
+			<p style="font-size: xx-large">&nbsp;</p>
+			<p style="font-size: xx-large">일식		</p>
+		</div>
+	
+		<div>
+		  <table bgcolor = "#474747" width="550" border="0" style="margin-left: auto; margin-right: auto;">
+				<tbody>
+					<tr>
+						<th>
+					    	<a href="#ra" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ramen','','img/MOUSEoVER/무제314_20220529015910.png',1)"><img src="img/MOUSEoVER/무제314_20220529015704.png" alt="" width="175" height="245" id="ramen"></a> </th>
+						<th>
+					    	<a href="#ro" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('roll','','img/MOUSEoVER/무제314_20220529015651.png',1)"><img src="img/MOUSEoVER/무제314_20220529015645.png" alt="" width="175" height="245" id="roll"></a> </th>
+						<th>
+					    	<a href="#so" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('soba','','img/MOUSEoVER/무제314_20220529015526.png',1)"><img src="img/MOUSEoVER/무제314_20220529015431.png" alt="" width="175" height="245" id="soba"></a> </th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+</div>
+	<!-- 레시피로 보 세계의 음식 -->
+<div>
+		<!-- 한식 편 -->
+	  	<table width="1000" border="0" style="margin-right: auto; margin-left: auto;">
+			<tbody>
+				<tr id="korfood">
+					<th style="text-align: left; font-size: xx-large;" scope="row"><p>&nbsp;</p>
+				    <p>&nbsp;</p>
+				    <p>한국의 요리</p></th>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/10fl2mebYHs"><img src="img/4_3/kim.png" width="400" alt="" id="kimbab"/></a></th>
+      	<td width="600">
+			<div style="margin-left: 40px; margin-right: 10px;">
+				<p style="font-size: x-large">김밥</p>
+		  		<p style="font-size: small">&nbsp; </p>
+		  		<p style="font-size: small">김 위에 밥을 펴 놓고 여러 가지 반찬으로 소를 박아 둘둘 말아 싸서 썰어 먹는 음식.</p>
+	  		  <p style="font-size: small">&nbsp; </p>
+			</div>
+		  <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+				<p style="font-size: medium">김밥 만들기</p>
+			<p style="font-size: medium">&nbsp; </p>
+				<p>1. 오이를  잘라 주고 소금을 뿌려 준다. 시금치로 해도 괜찮다.</p>
+		  		<p>&nbsp;</p>
+		  		<p>2.당근은 채썰어 볶아 준비해 준다.</p>
+		  		<p>&nbsp;</p>
+		  		<p>3.계란도 지단을 만들어 썰어둔다.</p>
+		  		<p>&nbsp;</p>
+	  		  <p>4. 갓 지은 밥에 소금 약간 넣어주고 참기름 한큰술 넣어주고 깨소금을 넣는다.</p>
+	  		<p>&nbsp;</p>
+	  		  <p>5. 한주먹의 밥양을 김에 골고루 펴주어 재료를 얻고 싸주면 맛있는 김밥 만들기 완성.</p>
+
+			</div>
+		</td>
+    </tr>
+  </tbody>
+</table>
+
+      <p>&nbsp;</p>
+  <p>&nbsp;</p>
+      <table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/_H64Kz7Mgz4"><img src="img/4_3/egg.png" alt="" width="400" id="egg"/></a></th>
+      	<td width="600">
+		  <div style="margin-left: 40px; margin-right: 10px;">
+			<p style="font-size: x-large">계란찜</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+	  		  <p style="font-size: small">달걀 푼 것에 새우젓이나 명란젓, 파, 깨 따위를 넣고 찐 음식.</p>
+  		    <p style="font-size: small">&nbsp;</p>
+			</div>
+		  <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+			<p style="font-size: medium">계란찜 만들기</p>
+	  		<p>&nbsp;</p>
+		  		<p>1. 작은 뚝배기에 계란 3개를 깨뜨려 넣은 뒤 거품기로 계란을 풀어준다.		  		</p>
+		  		<p>&nbsp;</p>
+		  		<p>2.설탕 1/3 큰 술, 소금 1/3 큰 술을 넣고 한 번 더 거품기로 잘 섞어준다.</p>
+	  		<p>&nbsp;</p>
+		  		<p>3.그리고 나서 물 100ml를 넣어주고 또 한 번 거품기로 저어준다.</p>
+		  		<p>&nbsp;</p>
+	  		  <p>4. 뚝배기를 가스레인지에 올린 뒤 중불로 계란이 몽글몽글 익을 때까지 젓가락으로 저어준다.</p>
+	  		<p>&nbsp;</p>
+	  		  <p>5. 4-5분 후 뚜껑을 열어보면 계란찜 만들기 완성.
+		</p></div></td>
+    </tr>
+  </tbody>
+</table>
+
+		<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/ni8eTkHhLGQ"><img src="img/4_3/pig.png" alt="" width="400" id="pig"/></a></th>
+      	<td width="600">
+		  <div style="margin-left: 40px; margin-right: 10px;">
+			<p style="font-size: x-large">돼지국밥</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+	  		  <p style="font-size: small">돼지고기와 뼈로 낸 국물에 밥을 말아 끓인 음식.		  </p>
+  		    <p style="font-size: small">&nbsp;</p>
+		  </div>
+		  <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+		    <p style="font-size: medium"> 돼지국밥 만들기</p>
+	  		<p>&nbsp;</p>
+		  		<p>1. 돼지고기 앞다리살 1kg 월계수잎과 같이 끓는 물에 넣고 5분간 삶아 준다.		  		</p>
+		  		<p>&nbsp;</p>
+		  		<p>2. 끓는 물에 5분간 삶아준 앞다리살을 건져내고 물은 전부 버려 줍니다. </p>
+		  		<p>&nbsp;</p>
+		  		<p>3. 다시 냄비에 앞다리살을 담고 쌀뜨물과 함께 육수용 재료들을 담아 줍니다.</p>
+	  		<p>&nbsp;</p>
+  		  <p>4. 1시간 이상 푹 삶아 줍니다. 고기를 삶는 동안에 물을 보충해서 고기가 바닥에 붙지 않도록 한다.</p>
+  		  <p>&nbsp;</p>
+  		  <p>5. 고기를 건지고 잠시 식혀 준 뒤에 먹기 좋은 크기로 잘라 준다.</p>
+  		  <p>&nbsp;</p>
+  		  <p>6. 육수에 간을 하고 따로 뚝배기에 담아 끓이면 맛있는 돼지국밥 만들기 완성.</p>
+	    </div></td>
+    </tr>
+  </tbody>
+</table>
+		
+		
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	
+	<!-- 중식 편 -->
+	<table width="1000" border="0" style="margin-right: auto; margin-left: auto;">
+		<tbody>
+				<tr id="chfood">
+					<th style="text-align: left; font-size: xx-large;" scope="row"><p>&nbsp;</p>
+				    <p>&nbsp;</p>
+				    <p>중국의 요리</p></th>
+				</tr>
+	  </tbody>
+  </table>
+		
+		<table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/kR77WlHRZrs"><img src="img/4_3/rice.png"  alt="" width="400" id="fridrice"/></a></th>
+      	<td width="600">
+		  <div style="margin-left: 40px; margin-right: 10px;">
+			<p style="font-size: x-large">볶음밥</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+	  		  <p style="font-size: small">쌀밥에 당근, 쇠고기, 감자 따위를 잘게 썰어 넣고 기름에 볶아 만든 음식.</p>
+  		    <p style="font-size: small">&nbsp;</p>
+			</div>
+		  <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+			<p style="font-size: medium">볶음밥 만들기</p>
+	  		<p>&nbsp;</p>
+		  		<p>1. 대파 약간은 송송 썰고 크래미 2개는 손으로 잘게 찢고, 밥을 준비한다.</p>
+	  		<p>&nbsp;</p>
+		  		<p>2. 계란 1개는 젓가락으로 잘 풀어 스크램블, 굴소스는 2/3큰술 준비.</p>
+		  		<p>&nbsp;</p>
+	  		  <p>3. 달걀이 어느정도 익으면, 파를 넣고 중불에 볶는다.</p>
+	  		  <p>&nbsp;</p>
+  		    <p>4. 파의 향이 나기 시작하면, 불을 끄고 밥을 기름에 골고루 섞듯이 잘 섞어준다.</p>
+	  		<p>&nbsp;</p>
+	  		  <p>5. 다시 불을 켜고 밥알을 고슬고슬하게 볶고, 크래미도 넣는다.</p>
+	  		  <p>&nbsp;</p>
+	  		  <p>6. 굴소스 2/3큰술을 넣어 골고루 섞는다. 간이 맞는다면 맛있는 볶음밥 만들기 완성.</p>
+
+		  </div>
+		</td>
+    </tr>
+  </tbody>
+</table>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/cnWyo34CPUY"><img src="img/4_3/mando.png"  alt="" width="400" id="mando"/></a></th>
+      	<td width="600">
+		  <div style="margin-left: 40px; margin-right: 10px;">
+			<p style="font-size: x-large">만두</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+	  		  <p style="font-size: small">밀가루 따위를 반죽하여 소를 넣어 빚은 음식.</p>
+	  		  <p style="font-size: small"> </p>
+		  </div>
+		  <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+			<p style="font-size: medium">만두 만들기</p>
+	  		<p>&nbsp;</p>
+		  		<p>1. 얼려둔 만두는 미리 꺼내서 해동시킨다.</p>
+		  		<p>&nbsp;</p>
+		  		<p>2. 예열된 팬에 만두를 넣고, 살짝 굽는다.</p>
+	  		<p>&nbsp;</p>
+		  		<p>3. 전분과 물을 넣어 전분물을 만든다.</p>
+		  		<p>&nbsp;</p>
+	  		  <p>4. 전분물을 붓고 나서 물기가 없어질 때까지 뚜껑을 덮고 익힌다.</p>
+	  		  <p>&nbsp;</p>
+	    <p>5. 전분물을 넣어 구운 맛있는 만두 요리 완성.</p></div></td>
+    </tr>
+  </tbody>
+</table>
+
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/LPNzWXSAr4c"><img src="img/4_3/spring.png" alt="" width="400" height="300" id="spring"/></a></th>
+      	<td width="600">
+		  <div style="margin-left: 40px; margin-right: 10px;">
+			<p style="font-size: x-large">춘권</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+	  		  <p style="font-size: small">돼지고기와 달걀로 버무린 소를 밀가루나 쌀가루로 만든 얇은 전병에 싸서 튀긴 음식.</p>
+  		    <p style="font-size: small">&nbsp;</p>
+		  </div>
+		  <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+		  <p style="font-size: medium"> 춘권 만들기</p>
+	  		<p>&nbsp;</p>
+		  		<p>1. 양파와 양배추, 호박, 마늘, 생강을 다듬는다.</p>
+		  		<p>&nbsp;</p>
+		  		<p>2. 돼지고기 등심(300g)을 채썰어준뒤,
+	  		    소금, 후추 한 꼬집씩과 정종 (2Tbsp) 를 넣고 밑간을한다.</p>
+		  		<p>&nbsp;</p>
+		  		<p>3. 팬위에 기름을 두르고, 다진 마늘과 생강, 돼지고기을 볶아주고,이후 고추가루를 넣어 볶아준다.</p>
+	  		<p>&nbsp;</p>
+  		  <p>4. 준비한 야채도 볶고, 식힌다. 식는 동안 스파이시 마요 소스와 밀가루 물을 준비.</p>
+  		  <p>&nbsp;</p>
+  		  <p>5. 고기를 건지고 잠시 식혀 준 뒤에 먹기 좋은 크기로 잘라 준다.</p>
+  		  <p>&nbsp;</p>
+  		  <p>6. 춘권피에 속을 채워 말고, 밀가루 물로 붙인다. 이후 튀기면 맛있는 춘권 완성.</p>
+	    </div></td>
+    </tr>
+  </tbody>
+</table>
+		
+</div>
+	
+	
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	
+	<!-- 일식 편 -->
+	<table width="1000" border="0" style="margin-right: auto; margin-left: auto;">
+		<tbody>
+		  <tr id="jafood">
+					<th style="text-align: left; font-size: xx-large;" scope="row"><p>&nbsp;</p>
+				    <p>&nbsp;</p>
+				    <p>일본의 요리</p></th>
+				</tr>
+	  </tbody>
+  </table>
+		
+		<table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/hM1Uns_o7HE"><img src="img/4_3/ram.png"  alt="" width="400" id="ra"/></a></th>
+   	  <td width="600">
+		  <div style="margin-left: 40px; margin-right: 10px;">
+			<p style="font-size: x-large">라멘</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+	  		  <p style="font-size: small">밀가루로 만든 길고 얇은 면을 삶아 다양한 재료를 넣어 만든 중화풍의 일본 면 요리.</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+		  </div>
+	    <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+		  <p style="font-size: medium">라멘 만들기</p>
+	  		<p>&nbsp;</p>
+		  		<p>1. 대파를 썰고 청양 고추를 다듬는다.</p>
+	  		<p>&nbsp;</p>
+		  		<p>2. 대파와 우삼겹, 된장을 볶는다.</p>
+		  		<p>&nbsp;</p>
+	  		  <p>3. 고추기름을 내고 다진 마늘을 준비한다..</p>
+	      <p>&nbsp;</p>
+  		    <p>4. 물과 면을 넣고 끓이면 맛있는 라멘 완성		  </p>
+	    </div>
+		</td>
+    </tr>
+  </tbody>
+</table>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/tRf3oA4J1ok"><img src="img/4_3/roll.png"  alt="" width="400" id="ro"/></a></th>
+      	<td width="600">
+		  <div style="margin-left: 40px; margin-right: 10px;">
+			<p style="font-size: x-large">캘리포니아 롤</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+	  		  <p style="font-size: small">생선, 야채, 과일 등 다양한 재료를 사용하는 초밥. </p>
+	  		  <p style="font-size: small"> </p>
+		  </div>
+		  <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+			<p style="font-size: medium">캘리포니아 롤 만들기</p>
+	  		<p>&nbsp;</p>
+		  		<p>1. 아보카도는 씨를 제거한 뒤 0.3cm 두께로 썰고 크레송은 물기를 제거한다.</p>
+		  		<p>&nbsp;</p>
+		  		<p>2. 게맛살은 결대로 찢은 뒤 마요네즈와 소금, 후춧가루를 넣어 버무린다.</p>
+	  		<p>&nbsp;</p>
+		  		<p>3. 내열용기에 식초 1큰술과 설탕, 소금을 넣고 전자레인지에 20초 정도 완전히 녹인다. </p>
+	  		<p>&nbsp;</p>
+	  		  <p>4. 따뜻한 밥에 넣고 고루 섞는다.</p>
+	  		  <p>&nbsp;</p>
+	    <p>5. 밥과 재료를 랩째 돌돌 말면 맛있는 캘리포니아 롤 완성.</p></div></td>
+    </tr>
+  </tbody>
+</table>
+
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+<table width="1000" height="300" border="0" style="margin-right: auto; margin-left: auto; margin-top: 10px;">
+  <tbody>
+    <tr>
+      <th width="400" scope="row"><a href="https://www.youtube.com/embed/2y4Jvvmj7LY"><img src="img/4_3/soba.png" alt="" width="400" height="300" id="so"/></a></th>
+      	<td width="600">
+		  <div style="margin-left: 40px; margin-right: 10px;">
+			<p style="font-size: x-large">소바</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+	  		  <p style="font-size: small">메밀가루를 주재료로 하여 만든 면류의 일종.</p>
+	  		  <p style="font-size: small">&nbsp;</p>
+		  </div>
+		  <div style="margin-left: 40px; margin-right: 10px; margin-top: 10px; font-size: small;">
+		  <p style="font-size: medium"> 소바 만들기</p>
+	  		<p>&nbsp;</p>
+		  		<p>1. 쯔유와 냉수를 2:3의 비율로 섞어 잠시 냉동실에 넣어둔다.</p>
+		  		<p>&nbsp;</p>
+		  		<p>2. 간 무를 고운 체에 넣고 생수를 뿌려 헹구면서 매운맛을 씻겨낸다.</p>
+		  		<p>&nbsp;</p>
+		  		<p>3. 고추냉이, 쯔유, 물, 간 무를 적당량 섞는다.</p>
+	  		<p>&nbsp;</p>
+  		  <p>4. 면을 삶고 전분기를 제거한다.</p>
+  		  <p>&nbsp;</p>
+  		  <p>5. 면을 소스에 찍으면  맛있는 소바 완성.</p>
+	    </div></td>
+    </tr>
+  </tbody>
+</table>
+	
+	<p>&nbsp;</p>
+		<p>&nbsp;</p>
+</div>
+	
+    <div style="width : 100%;  height: 300px;  background-color: #000000; color:#ffffff; opacity: 0.7;">
+		<p style="text-align: center">서울여자대학교</p>
+		<p style="text-align: center">미래산업융합대학 소프트웨어융합학과</p>
+		<p style="text-align: center">2020111380 김희영</p>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>intro</title>
+	<style type="text/css">
+		
+	a:link {
+    text-decoration: none;
+    color: #000000;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.headerIndex {
+			margin: auto;
+			height: auto;
+			width: auto;
+			overflow: auto;
+		}
+		
+		<!-- 드롭 박스 메뉴 -->
+		.dropmenu{
+			border:none;
+			border:0px;
+			padding:0px;
+			font: "sans-serif";
+			margin-left: auto; 
+			margin-right: auto;"
+		}
+		.dropmenu ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		.dropmenu li{
+			float:left;
+			padding:0px;
+		}
+		.dropmenu li a{
+			display:block;
+			line-height:70px;
+			margin:0px;
+			padding:0px 25px;
+			text-align:center;
+			text-decoration:none;
+		}
+
+		.dropmenu li a:hover, .dropmenu ul li:hover a{
+			background: rgb(100,100,100);
+			color:#FFFFFF;
+			text-decoration:none;
+		}
+		.dropmenu li ul{
+			display:none; 
+			height:auto;
+			border:0px;
+			position:absolute;
+			width:135px;
+			z-index:200;
+		}
+		.dropmenu li:hover ul{
+			display:block;
+		}
+
+		.dropmenu li li {
+			background: #000000;
+			display:block;
+			float:none;
+			margin:0px;
+			padding:0px;
+		}
+
+		.dropmenu li:hover li a{
+			background:none;
+		}
+
+		.dropmenu li ul a{
+			display:block;
+			margin:0px;
+			padding:0px 10px 0px 15px;
+			text-align:left;
+		}
+
+		.dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+			border:0px;
+			text-decoration:none;
+		}
+
+		.dropmenu p{
+			clear:left;
+		}
+
+
+		
+		.BG {
+    width: 100%;
+    height: 100%;
+    background-image: url("img/Back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: xx-large;
+	}
+    .suggestionMenu {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+    body,td,th {
+    font-family: "a추리소설", "리디바탕", "a포스터M", "맑은 고딕 Semilight";
+}
+    </style>
+</head>
+	<!-- 슬라이드쇼 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+
+	$('#top_menu .sub_1').hide();
+	$(' .sub_1').hide();
+
+	$('.menu_1').mouseover(function(){
+		$('.sub_1').slideDown();
+
+	});
+	$('.menu_1').mousedown(function(){
+		$('.sub_1').hide();
+	});
+});
+</script>
+	
+	<script>
+		int pageNuma=0;
+		int pageNumb=0;
+		String url;
+	
+		function imgsrc(a,b){
+			
+			if(a==0){
+				
+				pageNuma++;
+				if (pageNuma>b){
+					pageNuma=0;
+				}
+				url="img/hand/"+pageNuma+".png"
+			}
+			
+			if(a==1){
+				
+				pageNumb++;
+				if (pageNumb>b){
+					pageNumb=0;
+				}
+				url="img/wash/"+pageNumb+".png"
+			}
+		}
+	
+	</script>
+	
+	
+
+
+<body>
+	
+<div class="headerIndex"><table width="1200" border="0" style="margin-left: auto; margin-right: auto;">
+			<tr style="text-align: center"><td width="390"><a href="INDEX1.html"><img src="img/무제311_20220526234926.png" width="240" height="54" style="float: left; display: inline-block;" alt=""/></a></td>
+				  <td width="70"><p style="margin-top: 10px"><a href="intro.html">오늘의 셰프</a></p></td>
+			  <td width="70">
+					  
+			    <div class="dropmenu" align="middle">
+						  <ul>
+							  <li><a href="national.html" id="current" style="align: middle; margin-top: 10px;">세계의 요리</a>
+								  <ul>
+								    <li><a href="national.html#korfood">한식</a></li>
+									  <li><a href="national.html#chfood">중식</a></li>
+									  <li><a href="national.html#jafood">일식</a></li>
+								  </ul>
+							  </li>
+						  </ul>
+			    </div>
+					  
+			  </td>
+			  <td width="70"><p style="margin-top: 10px"><a href="tip.html">요리 TIP!</a></p></td>
+		    </tr>
+			</table>
+</div>
+	
+	
+<div class="BG">
+	<div style="text-align : center;"> <a href="https://play.google.com/store/games"><img src="img/무제309_20220526234104.png" width="1200" height="200" alt=""/></a>
+	</div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p style="text-align: center">오늘의 셰프</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <table width="800" height="700" border="0" style="margin-left: auto; margin-right: auto;">
+  <tbody>
+    <tr>
+		
+      <td width="400" height="200" style="background-color: #000000;  opacity: 0.7; color: #FFFFFF; font-size: medium; border-collapse: collapse;">
+		  <div style="height: 150; width: 400; margin-left: 10px; margin-right: 10px; font-size: medium;">
+			  <p><span style="font-size: large; font-weight: bold;">오늘의 셰프는</span> </p>
+			  <p>보다 쉬운 요리, </p>
+			  <p>보다 맛있는 요리, </p>
+			  <p>보다 즐거운 요리를 </p>
+			  <p>도와주는 여러분의 요리사 입니다. </p>
+			  <p>오늘의 셰프와 함께 즐거운 요리시간을 시작해요.</p>
+		  </div></td>
+      <td width="400" height="200"><div style = "height:100%"><img src="img/intro/무제141_20220531233141.png" height="200" width="400"  style="vertical-align: bottom;" alt=""/></div></td>
+    </tr>
+    <tr>
+      <td height="50" colspan="2">&nbsp;</td>
+      </tr>
+    <tr>
+      <td width="400" height="200">
+		  <div style ="height:100%">
+		  <img src="img/intro/무제321_20220531232644.png" width="403" height="202" style="vertical-align: bottom;" alt=""/></div>
+		</td>
+      <td style="background-color: #000000;  opacity: 0.7;" width="400" height="200"><div style="height: 150; width: 400; margin-left: 10px; margin-right: 10px; color: #FFFFFF;">
+        <p style="text-align: right; font-size: large; font-weight: bold;">새로운 요리<span style="font-size: medium">를 원하시나요?</span></p>
+        <p style="text-align: right; font-size: medium;">오늘의 셰프와 함께하고, </p>
+        <p style="text-align: right; font-size: medium;">새로운 레시피를 누구보다 빠르게 받아보세요. </p>
+	    </div></td>
+    </tr>
+    <tr>
+      <td height="50" colspan="2">&nbsp;</td>
+      </tr>
+    <tr>
+      <td width="400" height="200" style="background-color: #000000;  opacity: 0.7;">
+		<div style="height: 150; width: 400; margin-left: 10px; margin-right: 10px; font-size: medium; color: #FFFFFF; font-weight: bold;">
+			  <p>Tel. 010-1234-5678 </p>
+			  <p>e-mail. abcdefg@gmail.com</p> 
+	    </div></td>
+      <td width="400" height="200"><div><img src="img/intro/무제321_20220531232632.png" width="400" height="200" style="vertical-align: bottom;" alt=""/></div></td>
+    </tr>
+  </tbody>
+</table>
+		
+<p style="text-align: center">&nbsp;</p>
+	<p style="text-align: center;color:#000000; opacity: 0.7;"><a href="mailto:talent8661@gmail.com">contect with us</a></p>
+	<p style="text-align: center">&nbsp;</p>
+
+</div>
+	<div style="width : 100%;  height: 300px;  background-color: #000000; color:#ffffff; opacity: 0.7;">
+		<p style="text-align: center">&nbsp;</p>
+		<p style="text-align: center">서울여자대학교</p>
+		<p style="text-align: center">미래산업융합대학 소프트웨어융합학과</p>
+		<p style="text-align: center">2020111380 김희영</p>
+	</div>
+	
+</body>
+</html>
